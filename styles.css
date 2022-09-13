@@ -56,28 +56,14 @@
     border: 5px solid red; 
     display: none; 
     background-color: black; 
+    height: auto; 
+    width: 21vw; 
 
 }
 .dropdownMenu:hover > div {
-    display: inline-block; 
+    display:    block; 
 }
 
-.servicesSection {
-    background: rgba(144, 10, 10, 0.5); 
-    border: 1vh solid #b02425; 
-}
-.servicesContainer {
-    display: grid;
-    justify-content: center;
-}
-.servicesText {
-    color: white; 
-}
-.servicesItem {
-    list-style: none; 
-    color: white; 
-    font-size: 1.8vh; 
-}
 .heroTextContainer {
     display: grid; 
     grid-template-columns: repeat(3,auto);
@@ -113,7 +99,11 @@
     border-radius: 100%; 
     transition: all .4s; 
 }
-
+.leftBtn:hover, 
+.middleBtn:hover, 
+.rightBtn:hover {
+    cursor: pointer; 
+}
 .leftBtn:active, 
 .middleBtn:active, 
 .rightBtn:active {
@@ -123,11 +113,43 @@
 .galleryImg {
     transition: all .4s; 
 }
+.galleryImg:hover {
+    transform: scale(1.2); 
+    cursor: pointer; 
+    /* transform: translateY(-10px);  */
+}
 
 .galleryImg > img {
     height: auto; 
     width: 25vw; 
+    box-shadow: 1px 1px 15px 1px black; 
 }
+/* the following @media query is for a desktop feature only. its a grayscale filter */
+    @media all and (min-width: 1000px) {
+        .galleryImg > img {
+            filter: grayscale(100); 
+
+        }
+        .galleryImg > img:hover {
+            filter: grayscale(0);
+            box-shadow: 1px 5px 20px 1px black; 
+        }
+        .servicesText {
+            font-size: 40px; 
+        }
+        .servicesItem {
+            font-size: 30px !important; 
+        }
+        .servicesItem:hover {
+            text-decoration: underline;
+            transform: translateY(-8px); 
+        }
+        .dropdownContent {
+            height: auto !important; 
+            width:  5vw !important; 
+        }
+    }
+    
 
 .gallery12 {
     height: 100% !important; 
@@ -151,11 +173,6 @@
     display: none; 
 }
 
-.galleryImg:hover {
-    transform: scale(1.2); 
-    cursor: pointer; 
-    /* transform: translateY(-10px);  */
-}
 
 .quotesTopContainer, 
 .quotesBottomContainer {
@@ -173,16 +190,42 @@
     box-shadow: inset 0 0 0 0 black; 
     color: white; 
     border-radius: 5%; 
+    box-shadow: 1px 1px 15px 1px black; 
 }
 .quotesBtnTop:hover {
     transform: translateY(-8px); 
     cursor: pointer; 
     box-shadow: inset 0 -80px 0 0 black; 
     color: white; 
+    box-shadow: 1px 3px 15px 1px black !important; 
 }
 .quotesBtnBtm:hover {
     transform: translateY(8px); 
     cursor: pointer; 
     box-shadow: inset 0 80px 0 0 black; 
     color: white; 
+    box-shadow: 1px -3px 15px 1px black !important; 
+
+}
+.servicesSection {
+    background: rgba(144, 10, 10, 0.7); 
+    /* border: 1vh solid #b02425;  */
+    box-shadow: 1px 1px 15px 1px black; ;
+}
+.servicesContainer {
+    display: grid;
+    justify-content: center;
+    text-align: center
+}
+.servicesText {
+    color: white;
+
+}
+.servicesItem {
+    list-style: none; 
+    color: white; 
+    font-size: 1.8vh; 
+}
+.heroSection {
+    text-align: center
 }
