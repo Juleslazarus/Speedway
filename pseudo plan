@@ -1,0 +1,32 @@
+so i want the main page to be focused on his prior work and his biggest jobs 
+so that future potential clients can see what he's done. maybe before the gallary starts or after it starts or both
+i want to have a 'get a quote' button  and the quotes.html page will have the form that is sent to the email provided by him. 
+the buttons will have animations like so: 
+
+::root {
+    --SWDRed: #b02425
+}
+
+button {
+    background: --SWDRed;
+    box-shadow: inset 0 0 0 0 yellow; 
+}
+button:hover {
+    box-shadow: inset (100% of button pixel size) 0 0 0 yellow; 
+}
+
+or using: 
+
+button {
+    background: --SWDRed; 
+    animation: btnAnimate; 
+}
+
+@keyframe btnAnimate {
+    20% {translateY(5px)}
+    50% {translateY(-5px)}
+    75% {translateY(5px)}
+}
+
+for the slideshow ima make an arrow icon with an event listener that tells 
+image 1 2 or 3 to opacity '1' or '0' depending on which is already opacity '1'; 
