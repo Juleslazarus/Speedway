@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+::-webkit-scrollbar-thumb{
+    background-color: red; 
+}
+::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+::-webkit-scrollbar {
+    width: 5px; 
+}
 * {
     margin: 0; 
     padding: 0; 
@@ -57,8 +66,7 @@
     display: none; 
     background-color: black; 
     height: auto; 
-    width: 21vw; 
-
+    width: 21vw;
 }
 .dropdownMenu:hover > div {
     display:    block; 
@@ -148,6 +156,22 @@
             height: auto !important; 
             width:  5vw !important; 
         }
+        .quotesBtnTop {
+            font-size: 1vw !important; 
+        }
+        .quotesBtnBtm {
+            font-size: 1vw !important; 
+        }
+       .swdLogo {
+        height: 15vh; 
+        width: 30vw; 
+       }
+       .servicesItem {
+        font-size: 40px !important; 
+       }
+       .heroText {
+        font-size: 35px; 
+       }
     }
     
 
@@ -178,8 +202,8 @@
 .quotesBottomContainer {
     display: grid; 
     justify-content: center;
-    padding: 2vh;
-    
+    padding: 3vh;
+    margin-top: 4vh; 
 }
 
 .quotesBtnTop, 
@@ -214,7 +238,7 @@
 }
 .servicesContainer {
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center
 }
 .servicesText {
@@ -222,10 +246,56 @@
 
 }
 .servicesItem {
-    list-style: none; 
     color: white; 
-    font-size: 1.8vh; 
+    font-size: 1.6vh; 
 }
 .heroSection {
-    text-align: center
+    /* text-align: center */
 }
+
+/* this is for the quotes page styling  */
+
+.heroQuotesContainer {
+    display: grid; 
+    justify-content: center;
+    padding: 1vh; 
+    
+}
+.heroQuotesText {
+    color: white; 
+    background:rgba(144, 10, 10, 0.7); 
+    padding: 1vh; 
+    border-radius: 5%; 
+    box-shadow: 1px 5px 15px 1px black; 
+}
+.formWrapper {
+    display: grid; 
+    justify-content: center;
+    padding-top: 5%; 
+}
+
+.formContainer {
+    display: grid; 
+    justify-content: center;
+    padding-top: 5vh; 
+    height: auto; 
+    width: 350px; 
+    background: white; 
+    border-radius: 5%; 
+    box-shadow: 1px 1px 15px 1px gray; 
+}
+.formContainer input {
+    color: #b02425;  
+    padding: 1vh; 
+    border: .5vh solid #961515; 
+}   
+
+.formContainer input:invalid {
+    animation: .5s linear invalidShake; 
+}
+@keyframes invalidShade {
+    25%{transform: translateX(-8px)}
+    50%{transform: translateX(8px)}
+    75%{transform: translateX(-8px)}
+}
+
