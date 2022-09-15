@@ -27,13 +27,55 @@
     </div>
     <div class="formWrapper">
         <div class="formContainer">
-            <form action="https://formsubmit.co/juliannaranjoramos@gmail.com" method="POST">
-                <label  >Full Name</label>
+            <form class='quoteForm' action="https://formsubmit.co/juliannaranjoramos@gmail.com" method="POST">
+                <label  >Full Name:</label>
                 <input class='fullName'type="text" name="fullName" placeholder="Full Name" required>
-                <button type="submit">Submit</button>
-            </form>
+                <labal>Email:</labal>
+                <input class="email" type="email" name="email" placeholder="YourEmail@domain.com" required>
+                <label>Instagram @ (optional):</label>
+                <input class="insta" type="text" name="insta" placeholder="@InstagramUserName" >
+                <label>Car Make:</label>
+                <input class="carMake" type="text" name="carMake" placeholder="Honda, Bmw, etc," required>
+                <label>Model</label>
+                <input class="model" type="text" name="model" placeholder="Civic, M4, etc" required>
+                <label>Year</label>
+                <input class="year" type="number" name="year" placeholder="2020, 2022, etc" required>
+                <label>Trim (optional)</label>
+                <input class="trim" type="text" name="trim" placeholder="Ex, Competition, etc">
+                <label>Choose Services:</label>
+                <input class="chooseService" type="text" name="chooseService" placeholder="Washing, Waxing, Paint Correction, Interior Details, Shampooing, 
+                Headlight Restoration, Metal Polishing, Clay Bar, Ceramic Coating" required>
+                <label>Additional Info (Ask Questions Here!):</label>
+                <textarea class="addInfo" name="addInfo" > </textarea>
 
+                <button class="submitBtn" type="submit">Submit</button>
+            </form>
         </div>
-    </div
+    </div>
+    <section class="servicesSection2"> 
+        <div class="servicesContainer"> 
+            <h1 class="servicesText">Services Offered</h1>
+        </div>
+        <div class="heroSection">
+            <ul class="servicesList1">
+                <li class="servicesItem">WASHING</li>
+                <li class="servicesItem">WAXING</li>
+                <li class="servicesItem">PAINT CORRECTION</li>
+            </ul>
+            <ul class="servicesList1">
+                <li class="servicesItem">INTERIOR DETAILS</li>
+                <li class="servicesItem">SHAMPOOING</li>
+                <li class="servicesItem">HEADLIGHT RESTORATION</li>
+            </ul>
+            <ul class="servicesList1">
+                <li class="servicesItem">METAL POLISHING</li>
+                <li class="servicesItem">CLAY BAR</li>
+                <li class="servicesItem">CERAMIC COATING</li>
+            </ul>
+        </div>
+        <div class="heroTextContainer"> 
+            <h1 class="heroText">WE COME TO YOU!</h1>
+        </div>
+    </section>
 </body>
 </html>

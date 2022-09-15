@@ -284,18 +284,56 @@
     border-radius: 5%; 
     box-shadow: 1px 1px 15px 1px gray; 
 }
+.quoteForm {
+    display: grid; 
+    grid-template-columns: auto;
+}
 .formContainer input {
     color: #b02425;  
     padding: 1vh; 
-    border: .5vh solid #961515; 
+    border: .5vh solid black; 
 }   
 
 .formContainer input:invalid {
     animation: .5s linear invalidShake; 
+    border: .5vh solid red; 
 }
-@keyframes invalidShade {
+.formContainer input:valid {
+    animation: .5s linear validJump; 
+    border: .5vh solid green; 
+} 
+@keyframes invalidShake {
     25%{transform: translateX(-8px)}
     50%{transform: translateX(8px)}
     75%{transform: translateX(-8px)}
 }
+@keyframes validJump {
+    25% {transform: translateY(-8px)}
+    50% {transform: translateY(0px)}
+    75% {transform: translateY(-5px)}
+}
+.addInfo {
+    resize: vertical; 
+    color: #b02425; 
+}
+.submitBtn {
+    padding: 1vh;
+    margin-top: 2vh; 
+    border: none; 
+    background: #b02425; 
+    color: white; 
+    font-size: 3vh; 
+}
+@media all and (min-width: 950px) {
+    .formContainer {
+        width: 800px; 
+    }
+}
 
+
+.servicesSection2 {
+    background: rgba(144, 10, 10, 0.7); 
+    /* border: 1vh solid #b02425;  */
+    box-shadow: 1px 1px 15px 1px black; 
+    margin-top: 3vh; 
+}
