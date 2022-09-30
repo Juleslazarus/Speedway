@@ -1,339 +1,342 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-::-webkit-scrollbar-thumb{
-    background-color: red; 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+::-webkit-scrollbar-thumb {
+  background-color: red;
 }
 ::-webkit-scrollbar-track {
-    background-color: transparent; 
+  background-color: transparent;
 }
 ::-webkit-scrollbar {
-    width: 5px; 
+  width: 5px;
 }
 * {
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-    font-family: 'Roboto';
-    transition: all .4s; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  transition: all 0.4s;
 }
 
 .headerContainer {
-    display: grid; 
-    grid-template-columns: repeat(2, auto); 
-    justify-content: space-around;
-    background: #961515
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+  background: #961515;
 }
 .logoContainer {
-    display: grid; 
-    justify-content: start;
+  display: grid;
+  justify-content: start;
 }
 .swdLogo {
-    height: auto; 
-    width: 40vw; 
+  height: auto;
+  width: 40vw;
 }
 .dropdownMenu {
-    /* display: grid;  */
-    height: 10vh; 
-    width: 10vw; 
-    justify-content: center; 
-    padding: 5px; 
+  /* display: grid;  */
+  height: 10vh;
+  width: 10vw;
+  justify-content: center;
+  padding: 5px;
 }
 .menuBtn {
-    background-color: #b02425; 
-    color: white; 
-      
-    font-weight: 900; 
-    border: none; 
-    padding: 2vh; 
-    border-radius: 5px; 
-    justify-content: center;
-    transition: all .4s; 
-    box-shadow: inset 0 0 0 0 black; 
+  background-color: #b02425;
+  color: white;
+
+  font-weight: 900;
+  border: none;
+  padding: 2vh;
+  border-radius: 5px;
+  justify-content: center;
+  transition: all 0.4s;
+  box-shadow: inset 0 0 0 0 black;
 }
-.menuBtn:hover{
-    box-shadow: inset 0 0 150px 0  black; 
+.menuBtn:hover {
+  box-shadow: inset 0 0 150px 0 black;
 }
 .navBtn {
-    color: white; 
-    text-decoration: none; 
+  color: white;
+  text-decoration: none;
 }
-.navBtn:Hover {
-    border-bottom: 2px solid #b02425; 
+.navBtn:hover {
+  border-bottom: 2px solid #b02425;
 }
 
 .dropdownContent {
-    padding: 5px; 
-    border: 5px solid red; 
-    display: none; 
-    background-color: black; 
-    height: auto; 
-    width: 21vw;
+  padding: 5px;
+  border: 5px solid red;
+  display: none;
+  background-color: black;
+  height: auto;
+  width: 21vw;
 }
 .dropdownMenu:hover > div {
-    display:    block; 
+  display: block;
 }
 
 .heroTextContainer {
-    display: grid; 
-    grid-template-columns: repeat(3,auto);
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
 }
 .heroText {
-    justify-content: center;
-    color: white; 
+  justify-content: center;
+  color: white;
 }
 
 .heroSection {
-    display: grid; 
-    grid-template-columns: repeat(3, auto); 
-    padding: 10vw; 
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 10vw;
 }
 .galleryContainer {
-    position: relative; 
+  position: relative;
 }
 
 .galleryBtnsContainer {
-    display: grid; 
-    justify-content: space-around;
-    grid-template-columns: repeat(3, auto);
-    padding: 1vh;
-
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, auto);
+  padding: 1vh;
 }
 
 .leftBtn,
-.middleBtn, 
+.middleBtn,
 .rightBtn {
-    padding: 1.5vw; 
-    background: transparent; 
-    border-radius: 100%; 
-    transition: all .4s; 
+  padding: 1.5vw;
+  background: transparent;
+  border-radius: 100%;
+  transition: all 0.4s;
 }
-.leftBtn:hover, 
-.middleBtn:hover, 
+.leftBtn:hover,
+.middleBtn:hover,
 .rightBtn:hover {
-    cursor: pointer; 
+  cursor: pointer;
 }
-.leftBtn:active, 
-.middleBtn:active, 
+.leftBtn:active,
+.middleBtn:active,
 .rightBtn:active {
-    background-color: #b02425; 
+  background-color: #b02425;
 }
 
 .galleryImg {
-    transition: all .4s; 
+  transition: all 0.4s;
 }
 .galleryImg:hover {
-    transform: scale(1.2); 
-    cursor: pointer; 
-    /* transform: translateY(-10px);  */
+  transform: scale(1.2);
+  cursor: pointer;
+  /* transform: translateY(-10px);  */
 }
 
 .galleryImg > img {
-    height: auto; 
-    width: 25vw; 
-    box-shadow: 1px 1px 15px 1px black; 
+  height: auto;
+  width: 25vw;
+  box-shadow: 1px 1px 15px 1px black;
 }
 /* the following @media query is for a desktop feature only. its a grayscale filter */
-    @media all and (min-width: 1000px) {
-        .galleryImg > img {
-            filter: grayscale(100); 
-
-        }
-        .galleryImg > img:hover {
-            filter: grayscale(0);
-            box-shadow: 1px 5px 20px 1px black; 
-        }
-        .servicesText {
-            font-size: 40px; 
-        }
-        .servicesItem {
-            font-size: 30px !important; 
-        }
-        .servicesItem:hover {
-            text-decoration: underline;
-            transform: translateY(-8px); 
-        }
-        .dropdownContent {
-            height: auto !important; 
-            width:  5vw !important; 
-        }
-        .quotesBtnTop {
-            font-size: 1vw !important; 
-        }
-        .quotesBtnBtm {
-            font-size: 1vw !important; 
-        }
-       .swdLogo {
-        height: 15vh; 
-        width: 30vw; 
-       }
-       .servicesItem {
-        font-size: 40px !important; 
-       }
-       .heroText {
-        font-size: 35px; 
-       }
-    }
-    
+@media all and (min-width: 1000px) {
+  .galleryImg > img {
+    filter: grayscale(100);
+  }
+  .galleryImg > img:hover {
+    filter: grayscale(0);
+    box-shadow: 1px 5px 20px 1px black;
+  }
+  .servicesText {
+    font-size: 40px;
+  }
+  .servicesItem {
+    font-size: 30px !important;
+  }
+  .servicesItem:hover {
+    text-decoration: underline;
+    transform: translateY(-8px);
+  }
+  .dropdownContent {
+    height: auto !important;
+    width: 5vw !important;
+  }
+  .quotesBtnTop {
+    font-size: 1vw !important;
+  }
+  .quotesBtnBtm {
+    font-size: 1vw !important;
+  }
+  .swdLogo {
+    height: 15vh;
+    width: 30vw;
+  }
+  .servicesItem {
+    font-size: 40px !important;
+  }
+  .heroText {
+    font-size: 35px;
+  }
+}
 
 .gallery12 {
-    height: 100% !important; 
-    width: 25vw; 
+  height: 100% !important;
+  width: 25vw;
 }
 
-
-.galleryGrid1, 
-.galleryGrid2, 
+.galleryGrid1,
+.galleryGrid2,
 .galleryGrid3 {
-    display: grid; 
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    gap: 5vw; 
-    padding: 1vh; 
-    transition: all .4s; 
-    /* padding-top: 5.5vh !important;  */
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 5vw;
+  padding: 1vh;
+  transition: all 0.4s;
+  /* padding-top: 5.5vh !important;  */
 }
-.galleryGrid2, 
+.galleryGrid2,
 .galleryGrid3 {
-    display: none; 
+  display: none;
 }
 
-
-.quotesTopContainer, 
+.quotesTopContainer,
 .quotesBottomContainer {
-    display: grid; 
-    justify-content: center;
-    padding: 3vh;
-    margin-top: 4vh; 
+  display: grid;
+  justify-content: center;
+  padding: 3vh;
+  margin-top: 4vh;
 }
 
-.quotesBtnTop, 
-.quotesBtnBtm{
-    padding: 1.5vh; 
-    border: none; 
-    background: #b02425; 
-    box-shadow: inset 0 0 0 0 black; 
-    color: white; 
-    border-radius: 5%; 
-    box-shadow: 1px 1px 15px 1px black; 
+.quotesBtnTop,
+.quotesBtnBtm {
+  padding: 1.5vh;
+  border: none;
+  background: #b02425;
+  box-shadow: inset 0 0 0 0 black;
+  color: white;
+  border-radius: 5%;
+  box-shadow: 1px 1px 15px 1px black;
 }
 .quotesBtnTop:hover {
-    transform: translateY(-8px); 
-    cursor: pointer; 
-    box-shadow: inset 0 -80px 0 0 black; 
-    color: white; 
-    box-shadow: 1px 3px 15px 1px black !important; 
+  transform: translateY(-8px);
+  cursor: pointer;
+  box-shadow: inset 0 -80px 0 0 black;
+  color: white;
+  box-shadow: 1px 3px 15px 1px black !important;
 }
 .quotesBtnBtm:hover {
-    transform: translateY(8px); 
-    cursor: pointer; 
-    box-shadow: inset 0 80px 0 0 black; 
-    color: white; 
-    box-shadow: 1px -3px 15px 1px black !important; 
-
+  transform: translateY(8px);
+  cursor: pointer;
+  box-shadow: inset 0 80px 0 0 black;
+  color: white;
+  box-shadow: 1px -3px 15px 1px black !important;
 }
 .servicesSection {
-    background: rgba(144, 10, 10, 0.7); 
-    /* border: 1vh solid #b02425;  */
-    box-shadow: 1px 1px 15px 1px black; ;
+  background: rgba(144, 10, 10, 0.7);
+  /* border: 1vh solid #b02425;  */
+  box-shadow: 1px 1px 15px 1px black;
 }
 .servicesContainer {
-    display: grid;
-    /* justify-content: center; */
-    text-align: center
+  display: grid;
+  /* justify-content: center; */
+  text-align: center;
 }
 .servicesText {
-    color: white;
-
+  color: white;
 }
 .servicesItem {
-    color: white; 
-    font-size: 1.6vh; 
+  color: white;
+  font-size: 1.6vh;
 }
 .heroSection {
-    /* text-align: center */
+  /* text-align: center */
 }
 
 /* this is for the quotes page styling  */
 
 .heroQuotesContainer {
-    display: grid; 
-    justify-content: center;
-    padding: 1vh; 
-    
+  display: grid;
+  justify-content: center;
+  padding: 1vh;
 }
 .heroQuotesText {
-    color: white; 
-    background:rgba(144, 10, 10, 0.7); 
-    padding: 1vh; 
-    border-radius: 5%; 
-    box-shadow: 1px 5px 15px 1px black; 
+  color: white;
+  background: rgba(144, 10, 10, 0.7);
+  padding: 1vh;
+  border-radius: 5%;
+  box-shadow: 1px 5px 15px 1px black;
 }
 .formWrapper {
-    display: grid; 
-    justify-content: center;
-    padding-top: 5%; 
+  display: grid;
+  justify-content: center;
+  padding-top: 5%;
 }
 
 .formContainer {
-    display: grid; 
-    justify-content: center;
-    padding-top: 5vh; 
-    height: auto; 
-    width: 350px; 
-    background: white; 
-    border-radius: 5%; 
-    box-shadow: 1px 1px 15px 1px gray; 
+  display: grid;
+  justify-content: center;
+  padding-top: 5vh;
+  height: auto;
+  width: 350px;
+  background: white;
+  border-radius: 5%;
+  box-shadow: 1px 1px 15px 1px gray;
 }
 .quoteForm {
-    display: grid; 
-    grid-template-columns: auto;
+  display: grid;
+  grid-template-columns: auto;
 }
 .formContainer input {
-    color: #b02425;  
-    padding: 1vh; 
-    border: .5vh solid black; 
-}   
+  color: #b02425;
+  padding: 1vh;
+  border: 0.5vh solid black;
+}
 
 .formContainer input:invalid {
-    animation: .5s linear invalidShake; 
-    border: .5vh solid red; 
+  animation: 0.5s linear invalidShake;
+  border: 0.5vh solid red;
 }
 .formContainer input:valid {
-    animation: .5s linear validJump; 
-    border: .5vh solid green; 
-} 
+  animation: 0.5s linear validJump;
+  border: 0.5vh solid green;
+}
 @keyframes invalidShake {
-    25%{transform: translateX(-8px)}
-    50%{transform: translateX(8px)}
-    75%{transform: translateX(-8px)}
+  25% {
+    transform: translateX(-8px);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
 }
 @keyframes validJump {
-    25% {transform: translateY(-8px)}
-    50% {transform: translateY(0px)}
-    75% {transform: translateY(-5px)}
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
 }
 .addInfo {
-    resize: vertical; 
-    color: #b02425; 
+  resize: vertical;
+  color: #b02425;
 }
 .submitBtn {
-    padding: 1vh;
-    margin-top: 2vh; 
-    border: none; 
-    background: #b02425; 
-    color: white; 
-    font-size: 3vh; 
+  padding: 1vh;
+  margin-top: 2vh;
+  border: none;
+  background: #b02425;
+  color: white;
+  font-size: 3vh;
 }
 @media all and (min-width: 950px) {
-    .formContainer {
-        width: 800px; 
-    }
+  .formContainer {
+    width: 800px;
+  }
 }
 
-
 .servicesSection2 {
-    background: rgba(144, 10, 10, 0.7); 
-    /* border: 1vh solid #b02425;  */
-    box-shadow: 1px 1px 15px 1px black; 
-    margin-top: 3vh; 
+  background: rgba(144, 10, 10, 0.7);
+  /* border: 1vh solid #b02425;  */
+  box-shadow: 1px 1px 15px 1px black;
+  margin-top: 3vh;
 }
