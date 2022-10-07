@@ -226,7 +226,7 @@
   box-shadow: 1px -3px 15px 1px black !important;
 }
 .servicesSection {
-  background: rgba(144, 10, 10, 0.7);
+  background: #961515;
   /* border: 1vh solid #b02425;  */
   box-shadow: 1px 1px 15px 1px black;
 }
@@ -255,7 +255,7 @@
 }
 .heroQuotesText {
   color: white;
-  background: rgba(144, 10, 10, 0.7);
+  background: #961515;
   padding: 1vh;
   border-radius: 5%;
   box-shadow: 1px 5px 15px 1px black;
@@ -335,7 +335,7 @@
 }
 
 .servicesSection2 {
-  background: rgba(144, 10, 10, 0.7);
+  background: #961515;
   /* border: 1vh solid #b02425;  */
   box-shadow: 1px 1px 15px 1px black;
   margin-top: 3vh;
